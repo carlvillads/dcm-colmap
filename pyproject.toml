@@ -4,6 +4,8 @@ dynamic = ["version"]
 description = "DICOM colormaps for matplotlib."
 authors = [{ name = "Carl Villads Priisholm", email = "me@cvrp.dk" }]
 readme = "README.md"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
 requires-python = ">=3.11"
 keywords = [
     "dicom",
@@ -41,7 +43,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [dependency-groups]
-dev = ["ruff>=0.14.6", "pytest>=9.0.0", "mypy>=1.11"]
+dev = ["ruff>=0.14.6", "pytest>=9.0.0", "mypy>=1.11", "pydicom>=3.0.2"]
 
 [tool.ruff]
 line-length = 90
